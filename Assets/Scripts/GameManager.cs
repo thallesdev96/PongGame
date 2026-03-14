@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         playerScoreText.text = playerScore.ToString();
         if (playerScore >= winScore)
         {
-            gameOver.ShowGameOver("Player 1 Wins");
+            gameOver.ShowGameOver("Player 2 Wins");
             return true;
         }
         return false;
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         AIScoreText.text = AIScore.ToString();
         if (AIScore >= winScore)
         {
-            gameOver.ShowGameOver("Player 2 Wins"); 
+            gameOver.ShowGameOver("Player 1 Wins"); 
             return true;
         }
         return false;
